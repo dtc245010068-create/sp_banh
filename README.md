@@ -1,15 +1,12 @@
-# Đề tài 3: Triển khai Hệ thống Website Quảng bá Sản phẩm (WordPress)
+# Đề tài 3: Triển khai Hệ thống Website Quảng bá Sản phẩm Bánh (WordPress)
 - Môn học: Triển khai và Quản trị Hệ thống Phần mềm
-- Sinh viên thực hiện: Trần Quốc Dũng
-# Đề tài 3: Triển khai Hệ thống Website Quảng bá Sản phẩm (WordPress)
-- Môn học: Triển khai và Quản trị Hệ thống Phần mềm
-- Sinh viên thực hiện: Trần Quốc Dũng
+- Sinh viên thực hiện: Lồ Đức Minh
 
 ## 1. Hướng dẫn khởi chạy hệ thống
 
 ```bash
-git clone [https://github.com/DTC245010035/DTC245010035--3.git](https://github.com/DTC245010035/DTC245010035--3.git)
-cd DTC245010035--3
+git clone [https://github.com/dtc245010068-create/sp_banh.git](https://github.com/dtc245010068-create/sp_banh.git)
+cd sp_banh
 cp .env.example .env
 Bước 2: Khởi tạo chứng chỉ SSL/TLS tự ký (nếu chưa có)
 Bash
@@ -19,10 +16,10 @@ docker compose up -d
 Bước 4: Kiểm tra trạng thái hoạt động của 11 container
 docker compose ps
 ## 1. Cổng truy cập dịch vụ
-- Website WordPress (HTTPS): https://192.168.230.129
-- Quản trị phpMyAdmin: http://192.168.230.129:8081
-- Giám sát Prometheus: http://192.168.230.129:9090
-- Giám sát Grafana: http://192.168.230.129:3000 (User: admin / Pass: xem trong .env)
+- Website WordPress (HTTPS): https://192.168.242.130
+- Quản trị phpMyAdmin: http://192.168.242.130:8081
+- Giám sát Prometheus: http://192.168.242.130:9090
+- Giám sát Grafana: http://192.168.242.130:3000 (User: admin / Pass: xem trong .env)
 
 ## 2. Các câu truy vấn LogQL
 - Log Nginx: {container="nginx_proxy"}

@@ -320,15 +320,15 @@ EOF
 
 # 8. Tạo file README.md
 cat << 'EOF' > README.md
-# Đề tài 3: Triển khai Hệ thống Website Quảng bá Sản phẩm (WordPress)
+# Đề tài 3: Triển khai Hệ thống Website Quảng bá Sản phẩm Bánh (WordPress)
 - Môn học: Triển khai và Quản trị Hệ thống Phần mềm
-- Sinh viên thực hiện: Trần Quốc Dũng
+- Sinh viên thực hiện: Lồ Đức Minh
 
 ## 1. Cổng truy cập dịch vụ
-- Website WordPress (HTTPS): https://192.168.230.129
-- Quản trị phpMyAdmin: http://192.168.230.129:8081
-- Giám sát Prometheus: http://192.168.230.129:9090
-- Giám sát Grafana: http://192.168.230.129:3000 (User: admin / Pass: xem trong .env)
+- Website WordPress (HTTPS): https://192.168.242.130
+- Quản trị phpMyAdmin: http://192.168.242.130:8081
+- Giám sát Prometheus: http://192.168.242.130:9090
+- Giám sát Grafana: http://192.168.242.130:3000 (User: admin / Pass: xem trong .env)
 
 ## 2. Các câu truy vấn LogQL
 - Log Nginx: {container="nginx_proxy"}
@@ -344,8 +344,8 @@ cat << 'EOF' > README.md
 EOF
 
 # 9. Thực hiện đúng 3 commit theo yêu cầu chấm điểm
-git config user.name "Tran Quoc Dung"
-git config user.email "tranquocdung@example.com"
+git config user.name "Lo Duc Minh"
+git config user.email "dtc245010068@ictu.edu.vn"
 git add .env mysql/ nginx/ docker-compose.yml
 git commit -m "Commit 1: Trien khai WordPress, MySQL, phpMyAdmin va Nginx Reverse Proxy HTTPS"
 git add prometheus/
